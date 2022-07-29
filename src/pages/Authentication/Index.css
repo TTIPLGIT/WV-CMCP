@@ -1,0 +1,210 @@
+.LognContainer img {
+    width: 100%;
+     position: relative;
+  }
+  .backgroundimage{
+    height: 657px;
+  }
+  
+  .LognContainer .overlay {
+    width: 100%;
+    position: absolute;
+    top: 1px;
+    padding: 0.5rem 0rem 3.7rem 0rem;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .Sidebarimage{
+    height: 210px;
+    width: 80px !important;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    
+  }
+  .LoginTextOVerlay{
+    margin: 1rem 0rem 0rem 5rem;
+    color: #ffff;
+  }
+  .LoginTextOVerlay h3{
+    font-size:70px;
+  }
+  .LoginTextOVerlay h5{
+   color:#f0c710;
+   font-size:25px;
+  }
+  .LoginTextOVerlay span{
+    font-size:25px;
+    font-weight: 800;
+  }
+  .LoginTopContent{
+    display: flex;
+    margin: 0.3rem 0rem;
+    justify-content: space-between;
+    
+  }
+  .LoginContent {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 8rem 6rem 0rem 0rem;
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #F37021;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4)
+  }
+.RegistrationContent {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 6rem 0rem 0rem;
+  background-color: white;
+  padding: 0.5rem 1rem;  
+  border: 1px solid #F37021;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4)
+}
+.RegistrationInputContent input{
+  width: 65%;
+  margin: 0.5rem 0rem;
+  font-size: 16px;
+  height: 35px;
+  border-top: none;
+  border-left: 3px solid #F37021;
+}
+  .LoginContent h4{
+    color: #ffff;
+        font-family: sans-serif;
+        font-weight: 700;
+       
+  }
+  .RegistrationContent h4{
+    color: #ffff;
+        font-family: sans-serif;
+        font-weight: 700;
+       
+  }
+  .LoginContent span{
+    color: #F37021;
+    font-weight: 700;
+  }
+  .RegistrationContent span{
+    color: #F37021;
+    font-weight: 700;
+  }
+.LoginInputContent{
+    display: flex;
+    flex-direction: column;
+}
+.LoginInputContent input{
+  width: 75%;
+    margin: 0.5rem 0rem;
+    font-size: 16px;
+    height: 40px;
+    border-top: none;
+    border-left: 3px solid #F37021;
+}
+
+.LoginSubContent p{
+  color: #ffff;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.LoginSubContent input{
+    width: 30%;
+    margin: 1rem 1rem 0rem 0rem;
+}
+.LoginSubContentSubmit{
+    display: flex;
+    justify-content: flex-start;
+}
+.LoginSubContentSubmitButton{
+    
+    height: 35px;
+    border: none !important;
+    font-size: 14px;
+    margin: 1rem 1rem 0rem 0rem;
+    background-color: #F37021;
+    color: #ffff;
+    border-radius: 10px;
+}
+.LoginSubContentSubmitButtonLink{
+    color: #ffff !important;
+   
+}
+.LoginSubContentSubmit button{
+  width: 30%;
+    height: 35px;
+    border: none !important;
+    font-size: 14px;
+    margin: 1rem 1rem 0rem 0rem;
+    border-radius: 10px;
+}
+.LoginBottumText{
+    background-color: #F37021;
+    display: flex;
+    justify-content: center;
+    width: 75%;
+}
+@media only screen and (max-width: 425px) {
+  .Sidebarimage {
+    display: none;
+}
+.LoginContent {
+  width: 95%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 346px;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid #F37021;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.LoginSubContentSubmitButtonLink {
+  color: #ffff !important;
+  font-size: 10px;
+}
+.LoginSubContentSubmit button {
+  width: 30%;
+  height: 35px;
+  border: none !important;
+  font-size: 10px;
+  margin: 1rem 1rem 0rem 0rem;
+  border-radius: 10px;
+}
+.RegistrationContent {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 1rem;
+  background-color: white;
+padding: 1rem;
+  border: 1px solid #F37021;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+}
+@media only screen and (width: 768px) {
+  .LoginSubContentSubmit button {
+    width: 30%;
+    height: 35px;
+    border: none !important;
+    font-size: 10px;
+    margin: 1rem 1rem 0rem 0rem;
+    border-radius: 10px;
+}
+.RegistrationContent {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 3rem 0rem 0rem;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border: 1px solid #F37021;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+}
+}

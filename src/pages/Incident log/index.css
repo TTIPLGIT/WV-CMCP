@@ -1,0 +1,968 @@
+
+.IncidentLogContainer h3{
+    color: #EC6A2E;
+}
+.IncidentLogInputContent{
+    display: flex;
+    margin: 0.5rem;
+    flex-wrap: wrap;
+    width: 20%;  
+}
+.IncidentLogInputContentlabel{
+    margin: 0.5rem 0rem;
+    font-Weight: 500;
+    font-family: sans-serif;
+    font-size: 14px;
+    height: 30px;
+    
+}
+#outlined-basic{
+    height: 1px;
+}
+
+.IncidentLogInput {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 10px !important;
+    margin: 0.5rem 0rem;
+    padding: 1rem 0rem;
+    background-color: #ffff;
+    box-shadow: 4px 4px 6px 4px #757373;
+
+}
+
+.MuiTabs-flexContainer.css-heg063-MuiTabs-flexContainer {
+    width: 100%;
+}
+
+.IncidentLogInputContent select{
+    margin: 0rem 0.5rem;
+}
+.IncidentLogInputContentSelect {
+    height: 30px;
+}
+.IncidentLogInputHeading .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+    min-height: 0px !important;
+    padding: 0.5rem;
+}
+.MuiTabs-root.IncidentLogInputHeading.css-1ujnqem-MuiTabs-root {
+    width: 80% ;
+    display: flex;
+    justify-content: center;
+    background-color: #d3d0d0;
+    border-radius: 25px;
+    min-height: 0px !important;
+    border: 1px solid #EC6A2E;
+    margin: auto;
+    /* margin: 1.5rem  0rem 1rem 0rem; */
+}
+
+.IncidentLogInputHeading .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #ffff;
+    background-color: #F37021;
+    border-radius: 25px;
+    /* width: 33.3%; */
+    flex: 1;
+
+}
+.IncidentLogInputHeading .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+   
+   color: #EC6A2E;
+   flex: 1;
+   /* width: 33.3%; */
+   margin: 0rem;
+}
+
+.IncidentLogInputHeading .css-1aquho2-MuiTabs-indicator {
+   display: none;
+}
+.IncidentLogInputFinalContent{
+    margin: 0rem 1rem;
+    justify-content: space-around;
+    display: flex;
+    width: 50%;
+    
+}
+.IncidentLogSecondInput{
+    display: flex;
+}
+.IncidentLogInputButtonOne{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.IncidentLogInputButtonOne button{
+    padding: 0.5rem 2rem;
+    color: #ffff;
+    background-color: #F37021;
+    border: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    margin: 1rem 0.5rem;
+}
+.IncidentLogInputContainer {
+    padding: 0rem  2rem;
+    margin: 0rem 1.5rem;
+}
+.IncidentLogInputPointer{
+    color: red;
+}
+.IncidentLogBreadcrumbsContentContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.css-10mg1vw-MuiStepper-root {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0rem 1rem 0rem;
+    justify-content: center;
+    width: 85%;
+}
+.css-ahj2mt-MuiTypography-root {
+    margin: 0rem;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.00938em;
+    /* background-color:  #f5f3f3; */
+}
+
+.IncidentLogBreadcrumbs{
+    margin: 0rem;
+    font-size: 16px !important;
+    padding: 0.7rem  1rem;
+    background-color: #d3d0d0;
+}
+.css-19kzrtu {
+    padding: 0px !important;
+}
+main.makeStyles-content-12.makeStyles-content-left-13.makeStyles-contentShift-15.makeStyles-contentShift-left-16 {
+    background-color: #e9e9e9;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    padding: 0;
+   color: inherit;
+    min-height: 0px;
+    padding: 0px 0px;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.6);
+}
+.MuiBox-root.css-0 {
+    width: 95%;
+    margin: auto;
+}
+.popup-box {
+    position: fixed;
+    background: #00000050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+   
+  .box {
+    position: relative;
+    width: 30%;
+    height: 40%;
+   display: flex;
+   flex-direction: column;
+   padding: 1.5rem 2rem;
+   background: #fff;
+   border-radius: 4px;
+   border: 1px solid #999;
+   overflow: auto;
+  }
+   
+  .close-icon {
+    content: 'x';
+    cursor: pointer;
+    position: fixed;
+    right: calc(36% - 22px);
+    top: 11.5rem;
+    background: #ededed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #999;
+    font-size: 20px;
+  }
+  .incidentLogIconsContent{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+  }
+
+  .incidentViewTable{
+    margin: 2rem 1rem;
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem !important;
+    background-color: #dfdfdf;
+    box-shadow: 4px 4px 6px 2px #757373;
+    border-radius: 5px;
+  }
+  .incidentviewListHead{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    margin: 2rem 0rem auto;
+    color: #F37021;
+  }
+  /* .incidentViewCreate button{
+    position: absolute;
+    margin: 0.2rem 0rem 0rem 1rem;
+    border: none !important;
+    background-color: #EC6A2E !important;
+    border-radius: 3px;
+    padding:0.2rem 1.5rem 0rem 0.5rem;
+  } */
+  .CartviewListTable{
+    margin: 0rem 0rem 0rem 0.5rem;
+    font-size: 16px;
+    font-weight: 700;
+    color:#ffff;
+    padding: 0rem 0rem 0rem 0rem ;
+  }
+  /* .incidentViewCreate{
+    width: 20%;
+    height: 200px;
+    margin-top: 1rem;
+    position: absolute;
+    clip-path: polygon(97% 39%, 89% 48%, 99% 58%, 16% 58%, 0% 50%, 15% 39%);
+    background-color: #000000;
+  } */
+  .incidentViewCreate {
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    background: #EC6A2E;
+    /* box-shadow: 0px 0px 1px 0px #5a5a5a; */
+    margin: 1rem 0rem 0rem 2.2rem;
+  }
+  .CureveIncidentLog{
+    font-size: 20px !important;
+    font-weight: bold !important;
+    border-radius: 12px;
+    background-color: #bf360c;
+    color: #ffff;
+  }
+  .incidentViewCreate:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 20px solid #dfdfdf;
+    border-top: 23px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+  .incidentViewCreate:after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 20px solid #EC6A2E;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+  .incidentviewListHead h4{
+    font-weight: 700;
+  }
+ 
+  .incidentLogIcons{
+    color: rgb(63, 62, 62);
+    margin: 0rem 0.5rem;
+  }
+  p.MuiTypography-root.flexSpacer.MuiTypography-body1 {
+    color: black;
+}
+a:link {
+     text-decoration: none; 
+    }
+.incidentLogViewIcon.btn-secondary {
+        color: #fff;
+        background-color: rgb(10, 10, 179);
+
+    }
+button.incidentLogDownloadeIcon.btn.btn-secondary {
+        background-color: green;
+    }
+
+.incidentLogDeleteIcon.btn-secondary {
+    color: #fff;
+    background-color: rgb(201, 8, 8);
+}
+.css-16awh2u-MuiAutocomplete-root .MuiOutlinedInput-root {
+    padding: 2px !important;
+}
+
+.css-16awh2u-MuiAutocomplete-root .MuiOutlinedInput-root .MuiAutocomplete-input {
+    padding: 4px 4px 0.5px 6px !important;
+}
+.css-1gqyqc7-MuiTypography-root {
+    display: none !important;
+}
+.css-ag7rrr-MuiTypography-root {
+    display: none !important;
+}
+.AllreportedListHeader{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+.AllreportedListHeader button{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #EC6A2E;
+    color: #ffff;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+.AllreportedListContent{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+}
+.AllreportedListContentFeild #outlined-basic {
+    height: 15px;
+}
+
+.AllreportedList{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    font-size: 14px;
+}
+.AllreportedListContent input{
+    margin: 0rem 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+.AllreportTableContent{
+    font-size: 14px;
+    margin: 2rem 1rem;
+    background-color: #ffff;
+    padding: 1rem;
+   
+}
+.AllreportTableContent button{
+    border: none;
+    background-color: #EC6A2E;
+    display: flex;
+    margin: 1rem 0rem;
+    color: #ffff;
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+.invoicebutton{
+    color: #ffff;
+}
+.incidentViewTable .table > :not(caption) > * > * {
+    background-color: var(--bs-table-bg);
+    border-width: 1px;
+    padding: 0.3rem 2rem;
+    border-color: #ffff;
+
+}
+.AllreportTableContent .table > :not(caption) > * > * {
+    background-color: var(--bs-table-bg);
+    border-width: 2px;
+    padding: 0.5rem 2rem;
+    border-color: #ffff;
+
+}
+tbody {
+    background-color: gainsboro;
+   
+}
+.IncidentviewPagenation{
+    display: flex;
+    justify-content: space-between;
+    margin:0rem 2rem
+   
+}
+.IncidentviewPagenation p{
+    font-size: 14px;
+    color: #EC6A2E;
+    font-weight: 700;
+}
+.IncidentviewPagenation .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+    color: #fff;
+    background-color: #F37021;
+}
+.incidentsearchView{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 2.5rem 0rem 2rem;
+    font-weight: 700;
+    font-size: 14px;
+}
+.INcidentcreateButton{
+    background-color: #EC6A2E;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem 1rem;
+}
+.incidentsearchView label{
+    margin: 0.5rem 1rem ;
+}
+.incidentsearchView input{
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #e6e1e1;
+    border: 1px solid #000000;
+}
+.viewIncidentListDropdown{
+    margin: 0.5rem 0.5rem;
+    border: 1px solid #000000 !important;
+    border: none;
+    background-color: #e6e1e1;
+    color: #212529;
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem ;
+}
+.incidentViewTable .btn {
+    color: #212529;
+    padding: 0rem 0.5rem !important;
+    font-size: 14px;
+}
+.incidentViewTable .table > thead {
+    vertical-align: bottom;
+    background-color: #F37021;
+    color: white;
+}
+.AllreportTableContent .table {
+    color: #212529;
+    vertical-align: top;
+    border-color: #000000;
+    margin: 0.5rem 0rem;
+}
+.AllreportTableContent button {
+    border: none;
+    background-color: #EC6A2E;
+    display: flex;
+    margin: 0rem !important;
+    color: #ffff;
+    font-size: 14px;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+}
+.AllreportTableContent .table > thead {
+    vertical-align: bottom;
+    background-color: #F37021;
+    color: #ffff;
+}
+.incidentViewTable .react-bootstrap-table {
+    padding: 0rem 2rem;
+}
+
+@media only screen and (width: 320px) { 
+   
+    
+    .IncidentLogInputContainer {
+        padding: 0rem;
+        margin: 2rem 0rem;
+        
+    
+    }
+    .MuiBox-root.css-0 {
+        width: 95%;
+        margin: auto;
+    }
+    .IncidentLogInputHeading .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+        color: #ffff;
+        background-color: #F37021;
+        border-radius: 25px;
+        padding: 0.5rem;
+       flex: 1;
+    }
+    .IncidentLogInputContentlabel{
+        margin: 0.5rem 0rem;
+        font-Weight: 500;
+        font-family: sans-serif;
+        font-size: 14px;
+        height: 50px;
+        
+    }
+    .IncidentLogInputHeading .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+       
+       color: #EC6A2E;
+       flex: 1;
+       padding: 0.5rem;
+       margin: 0rem;
+    }
+  
+    .css-1wuw8dw-MuiBreadcrumbs-separator {
+        display: flex;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .MuiTabs-root.IncidentLogInputHeading.css-1ujnqem-MuiTabs-root {
+        width: 95% ;
+        display: flex;
+        justify-content: center;
+        background-color: #d3d0d0;
+        border-radius: 25px;
+        min-height: 0px !important;
+        border: 1px solid #EC6A2E;
+        margin: auto;
+    }
+   
+    .IncidentLogInputContent {
+        display: flex;
+        margin: 1rem ;
+        flex-wrap: wrap;
+        width: 75% !important;
+    }
+ 
+    .css-10mg1vw-MuiStepper-root {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 1rem 1rem 0rem !important;
+        justify-content: center;
+        width: 95%;
+    }
+    .AllreportedList {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1rem;
+        font-size: 14px;
+    }
+    .AllreportedListContent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0.5rem 0rem;
+    }
+    .incidentViewTable {
+        width: 0%;
+        margin: 0rem !important;
+        padding: 0rem !important;
+        background-color: #ffff;
+        box-shadow: 7px 7px 24px 7px #eeebeb;
+    }
+    .AllreportTableContent .table > :not(caption) > * > * {
+        padding: 0.3rem !important;
+        background-color: #ffff;
+        margin: 1rem 0rem;
+        /* border-bottom-width: 1px; */
+        box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+    }
+    .incidentLogViewIcon.btn-secondary {
+        color: #fff;
+        background-color: rgb(10, 10, 179);
+        height: 25px;
+        margin: 0rem 0.1rem;
+        font-size: 5px;
+    }
+    .incidentLogDeleteIcon.btn-secondary {
+        color: #fff;
+        background-color: rgb(201, 8, 8);
+        height: 25px;
+        font-size: 5px;
+      
+    }
+    /*view screen*/
+    .incidentViewTable .table > :not(caption) > * > * {
+        padding: 0.5rem 0.2rem !important;
+            background-color: #ffff;
+        margin: 1rem 0rem !important;
+        font-size: 12px;
+    }
+    .incidentViewTable {
+        width: 0%;
+        margin: 1rem 0rem !important;
+        padding: 0rem !important;
+        background-color: #ffff;
+        box-shadow: 7px 7px 24px 7px #eeebeb;
+    }
+    .incidentLogViewIconview.btn-secondary {
+        color: #fff;
+        background-color: rgb(10, 10, 179);
+        height: 25px;
+        margin: 0rem 0.1rem;
+        padding: 0.5rem;
+        font-size: 6px;
+    }
+    .incidentLogDeleteIcon.btn-secondary {
+        color: #fff;
+        background-color: rgb(201, 8, 8);
+        margin: 0rem 0.1rem;
+        padding: 0.5rem;
+        font-size: 6px;
+    }
+    .AllreportTableContent {
+        font-size: 11px !important;
+        /* margin: 1rem 0rem; */
+        background-color: #ffff;
+        padding: 0rem !important;
+    } 
+    .incidentLogViewIcon.btn-secondary{
+    padding: 0.5rem ;
+  }
+}
+  @media only screen and (width: 375px) {
+   
+    .IncidentLogInputContainer {
+        padding: 0rem ;
+        margin: 2rem 0rem;
+    
+    }
+    .MuiBox-root.css-0 {
+        width: 95%;
+        margin: auto;
+    }
+    .IncidentLogInputHeading .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+        color: #ffff;
+        background-color: #F37021;
+        border-radius: 25px;
+        padding: 0.5rem;
+       flex: 1;
+    }
+    .IncidentLogInputHeading .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+       
+       color: #EC6A2E;
+       flex: 1;
+       padding: 0.5rem;
+       margin: 0rem;
+    }
+  
+    .css-1wuw8dw-MuiBreadcrumbs-separator {
+        display: flex;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .MuiTabs-root.IncidentLogInputHeading.css-1ujnqem-MuiTabs-root {
+        width: 95% ;
+        display: flex;
+        justify-content: center;
+        background-color: #d3d0d0;
+        border-radius: 25px;
+        min-height: 0px !important;
+        border: 1px solid #EC6A2E;
+        margin: auto;
+    }
+   
+    .IncidentLogInputContent {
+        display: flex;
+        margin: 1rem ;
+        flex-wrap: wrap;
+        width: 75% !important;
+    }
+ 
+    .css-10mg1vw-MuiStepper-root {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 1rem 1rem 0rem !important;
+        justify-content: center;
+        width: 95%;
+    }
+    .AllreportedList {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1rem;
+        font-size: 14px;
+    }
+    .AllreportedListContent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0.5rem 0rem;
+    }
+    .incidentViewTable {
+     
+        margin: 0rem !important;
+        padding: 1.5rem 0rem !important;
+        background-color: #ffff;
+        /* box-shadow: 7px 7px 24px 7px #eeebeb; */
+    }
+    .incidentViewTable .table > :not(caption) > * > * {
+        padding: 0.3rem !important;
+        background-color: #ffff;
+        /* border-bottom-width: 1px; */
+        box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+    }
+    .incidentLogViewIcon.btn-secondary {
+        color: #fff;
+        background-color: rgb(10, 10, 179);
+        height: 25px;
+        margin: 0rem 0.1rem;
+        padding: 0.5rem;
+        font-size: 6px;
+    }
+    .incidentLogDeleteIcon.btn-secondary {
+        color: #fff;
+        background-color: rgb(201, 8, 8);
+        height: 30px;
+        font-size: 10px;
+    }
+    .AllreportTableContent {
+        font-size: 11px;
+        margin: 1rem 0rem;
+        background-color: #ffff;
+    }
+    /*view screen*/
+    .incidentViewTable .table > :not(caption) > * > * {
+        padding: 0.5rem 0.3rem !important;
+            background-color: #ffff;
+        margin: 1rem 0rem !important;
+        font-size: 14px;
+    }
+    .incidentViewTable {
+/* width: 100%; */
+        margin: 1rem 0rem !important;
+        padding:0rem !important;
+        background-color: #ffff;
+        box-shadow: 7px 7px 24px 7px #eeebeb;
+    }
+    .incidentLogViewIconview.btn-secondary {
+        color: #fff;
+        background-color: rgb(10, 10, 179);
+        height: 25px;
+        margin: 0rem 0.1rem;
+        padding: 0.5rem;
+        font-size: 6px;
+    }
+    .incidentLogDeleteIcon.btn-secondary {
+        color: #fff;
+        background-color: rgb(201, 8, 8);
+        margin: 0rem 0.1rem;
+        padding: 0.5rem;
+        font-size: 6px;
+        height: 25px;
+    }
+   
+  }
+  @media only screen and (width: 425px) {
+   
+    .IncidentLogInputContainer {
+        padding: 0rem ;
+        margin: 2rem 0rem;
+    
+    }
+    .MuiBox-root.css-0 {
+        width: 95%;
+        margin: auto;
+    }
+    .IncidentLogInputHeading .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+        color: #ffff;
+        background-color: #F37021;
+        border-radius: 25px;
+        padding: 0.5rem;
+       flex: 1;
+    }
+    .IncidentLogInputHeading .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+       
+       color: #EC6A2E;
+       flex: 1;
+       padding: 0.5rem;
+       margin: 0rem;
+    }
+  
+    .css-1wuw8dw-MuiBreadcrumbs-separator {
+        display: flex;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .MuiTabs-root.IncidentLogInputHeading.css-1ujnqem-MuiTabs-root {
+        width: 95% ;
+        display: flex;
+        justify-content: center;
+        background-color: #d3d0d0;
+        border-radius: 25px;
+        min-height: 0px !important;
+        border: 1px solid #EC6A2E;
+        margin: auto;
+    }
+   
+    .IncidentLogInputContent {
+        display: flex;
+        margin: 1rem ;
+        flex-wrap: wrap;
+        width: 75% !important;
+    }
+ 
+    .css-10mg1vw-MuiStepper-root {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 1rem 1rem 0rem !important;
+        justify-content: center;
+        width: 95%;
+    }
+     .AllreportedList {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1rem;
+        font-size: 14px;
+    }
+    .AllreportedListContent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0.5rem 0rem;
+    }
+    .incidentViewTable {
+     
+        margin: 0rem !important;
+        padding: 1.5rem 0rem !important;
+        background-color: #ffff;
+        /* box-shadow: 7px 7px 24px 7px #eeebeb; */
+    }
+    .incidentViewTable .table > :not(caption) > * > * {
+        padding: 0.3rem !important;
+        background-color: #ffff;
+        /* border-bottom-width: 1px; */
+        box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+    }
+    .incidentLogViewIcon.btn-secondary {
+        color: #fff;
+        background-color: rgb(10, 10, 179);
+        height: 30px;
+        margin: 0rem 0.1rem;
+        font-size: 10px;
+    }
+    .incidentLogDeleteIcon.btn-secondary {
+        color: #fff;
+        background-color: rgb(201, 8, 8);
+        height: 30px;
+        font-size: 10px;
+    }
+    .AllreportTableContent {
+        font-size: 11px;
+        background-color: #ffff;
+    }
+    .incidentLogViewIconview.btn-secondary {
+        color: #fff;
+        background-color: rgb(10, 10, 179);
+        height: 30px;
+        font-size: 8px !important;
+        margin: 1rem 0.1rem !important;
+    }
+
+  }
+
+  @media only screen and (width: 768px) {
+   
+    li.MuiBreadcrumbs-li {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .IncidentLogInputContainer {
+        padding: 0rem 0.5rem ;
+        margin: 2rem 0.5rem;
+        
+    }
+    .IncidentLogInputContent {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        flex-wrap: wrap;
+        width: 30%;
+    }
+    .incidentViewTable .table > :not(caption) > * > * {
+        padding: 0rem !important;
+        background-color: #ffff;
+        /* border-bottom-width: 1px; */
+       
+    }
+    .AllreportTableContent {
+        margin: 1rem 0rem;
+        background-color: #ffff;
+    }
+  }
+  @media only screen and (width: 1024px) {
+   
+    .IncidentLogInputContainer {
+        padding: 0rem 0.5rem ;
+        margin: 2rem 0.5rem;
+        /* background-color: #ffff;
+        box-shadow: 5px 5px 22px 5px #eeebeb; */
+    }
+    .IncidentLogInputContent{
+        display: flex;
+        margin: 0.5rem;
+        flex-wrap: wrap;
+        width: 25%;  
+    }
+    .MuiBox-root.css-0 {
+        width: 95%;
+        margin: auto;
+    }
+    .MuiTabs-root.IncidentLogInputHeading.css-1ujnqem-MuiTabs-root {
+        width: 95% ;
+        display: flex;
+        justify-content: center;
+        background-color: #d3d0d0;
+        border-radius: 25px;
+        min-height: 0px !important;
+        border: 1px solid #EC6A2E;
+        margin: auto;
+    }
+    .AllreportTableContent {
+        margin: 1rem 0rem;
+        font-size: 14px;
+        background-color: #ffff;
+    }
+  }
+  @media only screen and (width: 1440px) {
+   
+    .IncidentLogInputContainer {
+        padding: 0rem 0.5rem ;
+        margin: 2rem 0.5rem;
+        /* background-color: #ffff;
+        box-shadow: 5px 5px 22px 5px #eeebeb; */
+    }
+    .IncidentLogInputContent{
+        display: flex;
+        margin: 0.5rem;
+        flex-wrap: wrap;
+        width: 25%;  
+    }
+    .MuiBox-root.css-0 {
+        width: 95%;
+        margin: auto;
+    }
+    .MuiTabs-root.IncidentLogInputHeading.css-1ujnqem-MuiTabs-root {
+        width: 75% ;
+        display: flex;
+        justify-content: center;
+        background-color: #d3d0d0;
+        border-radius: 25px;
+        min-height: 0px !important;
+        border: 1px solid #EC6A2E;
+        margin: auto;
+    }
+    .AllreportTableContent {
+        margin: 1rem 0rem;
+        font-size: 14px;
+        background-color: #ffff;
+    }
+  }

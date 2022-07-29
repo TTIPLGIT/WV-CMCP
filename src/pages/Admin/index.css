@@ -1,0 +1,114 @@
+.RegistrationContainerHeading{
+    margin: 1rem 0.5rem;
+}
+.adminUserBreadcrumbs{
+    margin: 0rem;
+    font-size: 16px !important;
+    padding: 0.7rem  1rem;
+    background-color: #d3d0d0;
+}
+
+.adminUserRegistration{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+.UserRegistrationContent{
+    background-color: #ffff;
+    box-shadow: 4px 4px 6px 2px #757373;
+    padding: 1rem ;
+    border-radius: 10px;
+    margin: 1rem;
+}
+.adminUserinputContent{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+.adminUserinputContent input{
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+}
+
+.adminUserinputContent span{
+    color: #ff0000 ;
+}
+.UserAdminRegisterButton{
+    display: flex;
+    justify-content: center;
+}
+.UserAdminRegisterButton button{
+    background-color: #F37021;
+    color: #ffff;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+.userpasswordreset{
+    margin: 1rem ;
+}
+.ForgotPasswordContent{
+    margin: 1rem;
+    display: flex;
+}
+.ForgotPasswordMain{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    height: auto;
+    margin: 2rem 1.3rem;
+    padding: 2rem 0rem;
+    justify-content: center;
+    align-items:center;
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px 2px #757373;
+}
+.forgotPasswordinputContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+.forgotPasswordinputContent input{
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.5rem 0rem 0rem 1rem;
+}
+
+.ForgotPasswordButton button{
+    background-color: #F37021;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+.userListIconsContent{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+  }
+  .userListLogIcons{
+    color: rgb(63, 62, 62);
+    margin: 0rem 0.5rem;
+  }
+  .UserListBreadcrumbs{
+    margin: 0rem;
+    font-size: 16px !important;
+    padding: 0.7rem  1rem;
+    background-color: #d3d0d0;
+}
+.userListTable{
+    margin: 2rem 1rem;
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem !important;
+    background-color: #dfdfdf;
+    box-shadow: 4px 4px 6px 2px #757373;
+    border-radius: 5px;
+  }

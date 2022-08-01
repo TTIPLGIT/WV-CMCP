@@ -29,7 +29,7 @@
     margin: 0.5rem 0rem;
     padding: 1rem 0rem;
     background-color: #ffff;
-    box-shadow: 4px 4px 6px 4px #757373;
+    box-shadow: 1px 1px 4px 1px #757373;
 
 }
 
@@ -208,8 +208,8 @@ main.makeStyles-content-12.makeStyles-content-left-13.makeStyles-contentShift-15
   .incidentViewTable{
     margin: 2rem 1rem;
     padding: 0.5rem 0.5rem 0.3rem 0.5rem !important;
-    background-color: #dfdfdf;
-    box-shadow: 4px 4px 6px 2px #757373;
+    background-color: #ffff;
+    box-shadow: 1px 1px 4px 1px #757373;
     border-radius: 5px;
   }
   .incidentviewListHead{
@@ -219,14 +219,7 @@ main.makeStyles-content-12.makeStyles-content-left-13.makeStyles-contentShift-15
     margin: 2rem 0rem auto;
     color: #F37021;
   }
-  /* .incidentViewCreate button{
-    position: absolute;
-    margin: 0.2rem 0rem 0rem 1rem;
-    border: none !important;
-    background-color: #EC6A2E !important;
-    border-radius: 3px;
-    padding:0.2rem 1.5rem 0rem 0.5rem;
-  } */
+ 
   .CartviewListTable{
     margin: 0rem 0rem 0rem 0.5rem;
     font-size: 16px;
@@ -234,63 +227,65 @@ main.makeStyles-content-12.makeStyles-content-left-13.makeStyles-contentShift-15
     color:#ffff;
     padding: 0rem 0rem 0rem 0rem ;
   }
-  /* .incidentViewCreate{
-    width: 20%;
-    height: 200px;
-    margin-top: 1rem;
-    position: absolute;
-    clip-path: polygon(97% 39%, 89% 48%, 99% 58%, 16% 58%, 0% 50%, 15% 39%);
-    background-color: #000000;
-  } */
-  .incidentViewCreate {
-    display: flex;
-    align-items: center;
-    width: 130px;
-    height: 40px;
-    position: absolute;
-    background: #EC6A2E;
-    /* box-shadow: 0px 0px 1px 0px #5a5a5a; */
-    margin: 1rem 0rem 0rem 2.2rem;
-  }
-  .CureveIncidentLog{
-    font-size: 20px !important;
-    font-weight: bold !important;
-    border-radius: 12px;
-    background-color: #bf360c;
-    color: #ffff;
-  }
-  .incidentViewCreate:before {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-right: 20px solid #dfdfdf;
-    border-top: 23px solid transparent;
-    border-bottom: 20px solid transparent;
-  }
-  .incidentViewCreate:after {
-    content: "";
-    position: absolute;
-    left: -20px;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-right: 20px solid #EC6A2E;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-  }
+ 
+    .incidentViewCreate {
+        display: flex;
+        align-items: center;
+        width: 130px;
+        height: 40px;
+        position: absolute;
+        background: #EC6A2E;
+        /* box-shadow: 0px 0px 1px 0px #5a5a5a; */
+        margin: 1rem 0rem 0rem 2.2rem;
+    }
+    .CureveIncidentLog{
+        font-size: 20px !important;
+        font-weight: bold !important;
+        border-radius: 12px;
+        background-color: #bf360c;
+        color: #ffff;
+    }
+    .incidentViewCreate:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-right: 20px solid #ffff;
+        border-top: 23px solid transparent;
+        border-bottom: 20px solid transparent;
+    }
+    .incidentViewCreate:after {
+        content: "";
+        position: absolute;
+        left: -20px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-right: 20px solid #EC6A2E;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+    }
+    .CarveLink{
+        color: #ffff;
+    }
   .incidentviewListHead h4{
     font-weight: 700;
   }
- 
+ .SearchIconMisList{
+    position: absolute;
+    margin: 0.5rem 0rem 0rem 10.5rem;
+  
+ }
   .incidentLogIcons{
     color: rgb(63, 62, 62);
     margin: 0rem 0.5rem;
   }
+
   p.MuiTypography-root.flexSpacer.MuiTypography-body1 {
     color: black;
+
 }
 a:link {
      text-decoration: none; 
@@ -327,6 +322,8 @@ button.incidentLogDownloadeIcon.btn.btn-secondary {
     background-color: #ffff;
     padding: 1rem;
     margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 1px #757373;
 
 }
 .AllreportedListHeader button{
@@ -364,6 +361,7 @@ button.incidentLogDownloadeIcon.btn.btn-secondary {
     font-size: 14px;
     margin: 2rem 1rem;
     background-color: #ffff;
+    box-shadow: 1px 1px 4px 1px #757373;
     padding: 1rem;
    
 }
@@ -433,7 +431,7 @@ tbody {
 .incidentsearchView input{
     padding: 1rem;
     border-radius: 5px;
-    background-color: #e6e1e1;
+    background-color: #ffff;
     border: 1px solid #000000;
 }
 .viewIncidentListDropdown{
@@ -479,6 +477,40 @@ tbody {
 .incidentViewTable .react-bootstrap-table {
     padding: 0rem 2rem;
 }
+.AllreportTableContentMISReport{
+    display: flex;
+    justify-content: space-between;
+}
+.AllreportTableContentMISReportInput{
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background-color: #ffff;
+    margin: 0rem 0.5rem;
+    
+}
+.MISReportPagenation{
+    display: flex;
+    justify-content: space-between;
+    margin:0rem 2rem
+   
+}
+.MISReportPagenation p{
+    font-size: 14px;
+    color: #EC6A2E;
+    font-weight: 700;
+}
+.MISReportPagenation .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+    color: #fff;
+    background-color: #EC6A2E;
+    border-radius: 50px;
+}
+.MISReportPagenation .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root {
+    color: #000000;
+    background-color: #ffff;
+}
+
+
 
 @media only screen and (width: 320px) { 
    
@@ -564,7 +596,7 @@ tbody {
         margin: 0rem !important;
         padding: 0rem !important;
         background-color: #ffff;
-        box-shadow: 7px 7px 24px 7px #eeebeb;
+        box-shadow: 1px 1px 4px 1px #eeebeb;
     }
     .AllreportTableContent .table > :not(caption) > * > * {
         padding: 0.3rem !important;
@@ -599,7 +631,7 @@ tbody {
         margin: 1rem 0rem !important;
         padding: 0rem !important;
         background-color: #ffff;
-        box-shadow: 7px 7px 24px 7px #eeebeb;
+        box-shadow: 1px 1px 4px 1px #eeebeb;
     }
     .incidentLogViewIconview.btn-secondary {
         color: #fff;
@@ -739,7 +771,7 @@ tbody {
         margin: 1rem 0rem !important;
         padding:0rem !important;
         background-color: #ffff;
-        box-shadow: 7px 7px 24px 7px #eeebeb;
+        box-shadow: 1px 1px 4px 1px #eeebeb;
     }
     .incidentLogViewIconview.btn-secondary {
         color: #fff;

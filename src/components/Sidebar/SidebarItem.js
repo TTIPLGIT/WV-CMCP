@@ -1,87 +1,87 @@
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
-import Collapse from '@material-ui/core/Collapse';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import { NavLink } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import { capitalize } from '../../helpers';
-import classNames from 'classnames';
-import { makeStyles } from '@material-ui/core/styles';
-import useMountEffect from '../../mountEffect';
-import { withTheme } from 'react-jss';
-import { color } from '@mui/system';
+import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
+import Collapse from "@material-ui/core/Collapse";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemIcon from "@material-ui/core/ListItemIcon";
+import { NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
+import React from "react";
+import Typography from "@material-ui/core/Typography";
+import { capitalize } from "../../helpers";
+import classNames from "classnames";
+import { makeStyles } from "@material-ui/core/styles";
+import useMountEffect from "../../mountEffect";
+import { withTheme } from "react-jss";
+import { color } from "@mui/system";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   badge: {
-    width: '20px',
-    height: '20px',
-    display: 'flex',
+    width: "20px",
+    height: "20px",
+    display: "flex",
     zIndex: 1,
-    flexWrap: 'wrap',
-    fontSize: '0.75rem',
-    alignItems: 'center',
-    borderRadius: '50%',
-    alignContent: 'center',
-    flexDirection: 'row',
-    justifyContent: 'center'
+    flexWrap: "wrap",
+    fontSize: "0.75rem",
+    alignItems: "center",
+    borderRadius: "50%",
+    alignContent: "center",
+    flexDirection: "row",
+    justifyContent: "center",
   },
   menuLink: {
-    position: 'relative',
-    display: 'block'
+    position: "relative",
+    display: "block",
   },
   menuItem: {
     paddingLeft: 0,
     paddingRight: 0,
     paddingTop: theme.spacing(1) * 1.5,
     paddingBottom: theme.spacing(1) * 1.5,
-    
-    
+  },
+  menuItemActive:{
+    color: "#fff !important"
   },
 
-  menuIcon: {
-    marginLeft: theme.spacing(1) * 2,
-    marginRight: theme.spacing(1) * 2,
-    fontSize:'small'
+  // menuIcon: {
+  //   marginLeft: theme.spacing(1) * 2,
+  //   marginRight: theme.spacing(1) * 2,
 
-  },
+  // },
 
   menuSubItem: {
-    paddingLeft: '55px',
-    paddingRight: '55px',
+    paddingLeft: "55px",
+    paddingRight: "55px",
     paddingTop: theme.spacing(1) * 1.5,
-    paddingBottom: theme.spacing(1) * 1.5
+    paddingBottom: theme.spacing(1) * 1.5,
   },
   menuCollapsed: {
     backgroundColor: theme.palette.action.hover,
   },
   menuActive: {
     backgroundColor: "#F37021",
-    color:"#ffffff",
+    color: "#fff !important",
   },
   menuClosed: {
-    backgroundColor: 'transparent',
+    backgroundColor: "transparent",
   },
   caret: {
     marginLeft: theme.spacing(1) * 2,
     marginRight: theme.spacing(1) * 2,
-    minWidth: 0
+    minWidth: 0,
   },
   primary: {
     backgroundColor: theme.palette.primary.main,
-    color: theme.palette.primary.contrastText
+    color: theme.palette.primary.contrastText,
   },
   secondary: {
     backgroundColor: theme.palette.secondary.main,
-    color: theme.palette.secondary.contrastText
+    color: theme.palette.secondary.contrastText,
   },
   error: {
     backgroundColor: theme.palette.error.main,
-    color: theme.palette.error.contrastText
-  }
+    color: theme.palette.error.contrastText,
+  },
 }));
 
 const SidebarItem = ({
@@ -89,19 +89,19 @@ const SidebarItem = ({
   index,
   activeRoute,
   toggleMenu,
-  currentPath
+  currentPath,
 }) => {
   const classes = useStyles();
 
   useMountEffect(() => {
-    if (!currentPath || activeRoute === index || route.path === '/') return;
+    if (!currentPath || activeRoute === index || route.path === "/") return;
     toggleMenu(index);
   });
 
-  const badge = badge => {
+  const badge = (badge) => {
     if (!badge) return;
     const badgeClassName = classNames(classes.badge, {
-      [classes[`${badge.type}`]]: badge.type !== 'default'
+      [classes[`${badge.type}`]]: badge.type !== "default",
     });
     return (
       <Typography
@@ -113,7 +113,7 @@ const SidebarItem = ({
     );
   };
 
-  if (route.type === 'external') {
+  if (route.type === "external") {
     return (
       <a
         href={route.path}
@@ -135,7 +135,7 @@ const SidebarItem = ({
     );
   }
 
-  if (route.type === 'submenu') {
+  if (route.type === "submenu") {
     return (
       <div
         className={
@@ -143,7 +143,7 @@ const SidebarItem = ({
         }
       >
         <ListItem
-          className={classes.menuItem}
+          className={activeRoute === index ? classes.menuItem : classes.menuItemActive}
           button
           key={index}
           onClick={() => toggleMenu(index)}
@@ -171,8 +171,8 @@ const SidebarItem = ({
           <List disablePadding>
             {route.children.map((subitem, index) => (
               <NavLink
-                to={`${route.path ? route.path : ''}${
-                  subitem.path ? subitem.path : ''
+                to={`${route.path ? route.path : ""}${
+                  subitem.path ? subitem.path : ""
                 }`}
                 exact
                 className={classes.menuLink}
@@ -222,7 +222,7 @@ SidebarItem.prototypes = {
   route: PropTypes.object,
   index: PropTypes.number,
   activeRoute: PropTypes.number,
-  toggleMenu: PropTypes.func
+  toggleMenu: PropTypes.func,
 };
 
 export default SidebarItem;

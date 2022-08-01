@@ -25,6 +25,7 @@ import Autocomplete from "@mui/material/Autocomplete";
 
 
 
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -224,7 +225,7 @@ export default function ViewLog(props) {
       style={{ cursor: "pointer", color: "	#000000", fontSize: "14px" }}
       color="text.primary"
     >
-      Viwe Log
+      View Log
     </Typography>,
   ];
 
@@ -267,6 +268,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                 disabled
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
             <div className="ViewLogInputContent">
@@ -281,6 +286,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                disabled
+               sx={{
+                "& legend": { display: "none" },
+                "& fieldset": { top: 0 },
+            }}
               />
             </div>
             <div className="ViewLogInputContent">
@@ -295,6 +304,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                 disabled
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
 
@@ -309,6 +322,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                 disabled
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
             <div className="ViewLogInputContent">
@@ -322,6 +339,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                 disabled
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
             <div className="ViewLogInputContent">
@@ -334,6 +355,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                disabled
+               sx={{
+                "& legend": { display: "none" },
+                "& fieldset": { top: 0 },
+            }}
               />
             </div>
 
@@ -347,6 +372,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                disabled
+               sx={{
+                "& legend": { display: "none" },
+                "& fieldset": { top: 0 },
+            }}
               />
             </div>
             <div className="ViewLogInputContent">
@@ -359,6 +388,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                disabled
+               sx={{
+                "& legend": { display: "none" },
+                "& fieldset": { top: 0 },
+            }}
               />
             </div> <div className="ViewLogInputContent">
               <lable className="ViewLogInputContentlabel">
@@ -370,6 +403,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                disabled
+               sx={{
+                "& legend": { display: "none" },
+                "& fieldset": { top: 0 },
+            }}
               />
             </div>
 
@@ -383,6 +420,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                disabled
+               sx={{
+                "& legend": { display: "none" },
+                "& fieldset": { top: 0 },
+            }}
               />
             </div>
 
@@ -396,6 +437,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                disabled
+               sx={{
+                "& legend": { display: "none" },
+                "& fieldset": { top: 0 },
+            }}
               />
             </div>
 
@@ -409,6 +454,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                disabled
+               sx={{
+                "& legend": { display: "none" },
+                "& fieldset": { top: 0 },
+            }}
               />
             </div>
             <div className="ViewLogInputContent">
@@ -421,6 +470,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                disabled
+               sx={{
+                "& legend": { display: "none" },
+                "& fieldset": { top: 0 },
+            }}
               />
             </div>
             <div className="ViewLogInputContent">
@@ -433,6 +486,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                disabled
+               sx={{
+                "& legend": { display: "none" },
+                "& fieldset": { top: 0 },
+            }}
               />
             </div>
             <div className="ViewLogInputContent">
@@ -445,6 +502,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                disabled
+               sx={{
+                "& legend": { display: "none" },
+                "& fieldset": { top: 0 },
+            }}
               />
             </div>
             <div className="ViewLogInputContent">
@@ -457,6 +518,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                disabled
+               sx={{
+                "& legend": { display: "none" },
+                "& fieldset": { top: 0 },
+            }}
               />
             </div>
 
@@ -482,6 +547,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                disabled
+               sx={{
+                "& legend": { display: "none" },
+                "& fieldset": { top: 0 },
+            }}
               />
             </div>
             <div className="ViewLogInputContent">
@@ -495,6 +564,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                 disabled
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
 
@@ -509,6 +582,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                 disabled
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
             <div className="ViewLogInputContent">
@@ -522,6 +599,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                 disabled
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
             <div className="ViewLogInputContent">
@@ -535,6 +616,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                 disabled
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
 
@@ -549,6 +634,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                 disabled
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
             <div className="ViewLogInputContent">
@@ -562,6 +651,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                 disabled
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
 
@@ -576,6 +669,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                 disabled
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
 
@@ -590,6 +687,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                 disabled
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
             
@@ -604,6 +705,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                 disabled
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
             <div className="ViewLogInputContent">
@@ -617,6 +722,10 @@ export default function ViewLog(props) {
                 id="outlined-basic"
                 variant="outlined"
                 disabled
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
 
@@ -645,6 +754,10 @@ export default function ViewLog(props) {
                   onChange={(e) =>
                     setData({ ...data, LocalPOliceStation: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 />
               </FormControl>
             </div>
@@ -664,6 +777,10 @@ export default function ViewLog(props) {
                   onChange={(e) =>
                     setData({ ...data, PoliceHelpLine: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 />
               </FormControl>
             </div>
@@ -683,6 +800,10 @@ export default function ViewLog(props) {
                   onChange={(e) =>
                     setData({ ...data, childLine: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 />
               </FormControl>
             </div>
@@ -702,6 +823,10 @@ export default function ViewLog(props) {
                   onChange={(e) =>
                     setData({ ...data, childwelfarecomitee: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 />
               </FormControl>
             </div>
@@ -720,6 +845,10 @@ export default function ViewLog(props) {
                   onChange={(e) =>
                     setData({ ...data, childProductionUnit: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 />
               </FormControl>
             </div>
@@ -734,7 +863,10 @@ export default function ViewLog(props) {
                 value={data.incidentreporothers}
                 id="outlined-basic"
                 variant="outlined"
-               
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
 
@@ -759,6 +891,10 @@ export default function ViewLog(props) {
                   onChange={(e) =>
                     setData({ ...data, firGDActionTacken: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 >
                   {/* <MenuItem value="WhatSectionsAppliedFIR">
                     What Sections Applied in FIR?{" "}
@@ -820,6 +956,10 @@ export default function ViewLog(props) {
                   onChange={(e) =>
                     setData({ ...data, victimRecoverdorNot: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 >
                   <MenuItem value="yes">Yes</MenuItem>
                   <MenuItem value=" no"> No</MenuItem>
@@ -841,6 +981,10 @@ export default function ViewLog(props) {
                   onChange={(e) =>
                     setData({ ...data, accusedArrested: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 >
                   <MenuItem value=" yes"> Yes</MenuItem>
                   <MenuItem value=" no"> No</MenuItem>
@@ -861,6 +1005,10 @@ export default function ViewLog(props) {
                 onChange={(e) =>
                   setData({ ...data, numberofArrested: e.target.value })
                 }
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
           </div>

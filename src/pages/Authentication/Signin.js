@@ -132,7 +132,7 @@ const Signin = () => {
                         <input type='text' placeholder="User ID"/>
                         <input type='text' placeholder="Password"/>
                         <div className='LoginSubContent'>
-                     <Link to="/forgot">  <p>Forgot Password</p></Link>
+                     <Link to="/forgot">  <p>Forgot Password ?</p></Link>
                         </div >
                         <div className='LoginSubContentSubmit'>
                             <button className='LoginSubContentSubmitButton'><Link to="/" className='LoginSubContentSubmitButtonLink'>SIGN IN</Link></button>

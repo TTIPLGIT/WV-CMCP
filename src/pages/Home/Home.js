@@ -126,7 +126,7 @@ const Home = () => {
         <Grid item xs={12} sm={6} md={3}>
           <StatCard
             type="fill"
-            title="NO-OF-User Registered"
+            title="No-of-User Registered"
             value={870}
             icon={<EmailIcon />}
             color="#ffd740"

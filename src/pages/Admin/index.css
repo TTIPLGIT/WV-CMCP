@@ -7,6 +7,12 @@
     padding: 0.7rem  1rem;
     background-color: #d3d0d0;
 }
+.UserListBreadcrusmbs{
+    margin: 0rem;
+    font-size: 16px !important;
+    padding: 0.7rem  1rem;
+    background-color: #d3d0d0;
+}
 
 .adminUserRegistration{
     display: flex;
@@ -16,8 +22,8 @@
 }
 .UserRegistrationContent{
     background-color: #ffff;
-    box-shadow: 4px 4px 6px 2px #757373;
-    padding: 1rem ;
+    box-shadow: 1px 1px 4px 1px #757373;
+    padding: 3rem   1rem ;
     border-radius: 10px;
     margin: 1rem;
 }
@@ -28,7 +34,7 @@
     margin: 0.5rem;
     padding: 0.5rem;
 }
-.adminUserinputContent input{
+.adminUserinputContent .TextField{
     border-radius: 5px;
     padding: 0.5rem;
     margin: 0.5rem 0rem 0rem 0rem;
@@ -47,6 +53,7 @@
     border-radius: 5px;
     border: none;
     padding: 0.5rem 1rem;
+margin: 0.5rem 0rem auto;
 }
 .userpasswordreset{
     margin: 1rem ;
@@ -66,7 +73,7 @@
     align-items:center;
     background-color: #ffff;
     border-radius: 10px;
-    box-shadow: 4px 4px 6px 2px #757373;
+    box-shadow: 1px 1px 4px 1px #757373;
 }
 .forgotPasswordinputContent{
     display: flex;
@@ -76,7 +83,7 @@
     margin: 0.5rem;
     padding: 0.5rem;
 }
-.forgotPasswordinputContent input{
+.forgotPasswordinputContent .TextField{
     border-radius: 5px;
     padding: 0.5rem;
     margin: 0.5rem 0rem 0rem 1rem;
@@ -106,9 +113,116 @@
     background-color: #d3d0d0;
 }
 .userListTable{
-    margin: 2rem 1rem;
-    padding: 0.5rem 0.5rem 0.3rem 0.5rem !important;
-    background-color: #dfdfdf;
-    box-shadow: 4px 4px 6px 2px #757373;
+    margin: 1rem 1rem;
+    padding: 0.1rem 0.5rem 0.1rem 0.5rem !important;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 1px 1px 4px 1px #757373;
     border-radius: 5px;
+  }
+  .userListearchView{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 2.5rem 0rem 2rem;
+    font-weight: 700;
+    font-size: 14px;
+}
+.userListearchView label{
+    margin: 0.5rem 1rem ;
+}
+.userListearchView input{
+    padding: 1rem;
+    border-radius: 5px;
+
+    border: 1px solid #000000;
+}
+.userListListDropdown{
+    margin: 0.5rem 0.5rem;
+    border: 1px solid #000000 !important;
+    border: none;
+    background-color: #e6e1e1;
+    color: #212529;
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem ;
+}
+.userListPagenation{
+    display: flex;
+    justify-content: space-between;
+    margin:0rem 2rem
+   
+}
+.userListPagenation p{
+    font-size: 14px;
+    color: #EC6A2E;
+    font-weight: 700;
+}
+.userListPagenation .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+    color: #fff;
+    background-color: #F37021;
+}
+.userListTable .table {
+    color: #212529;
+    vertical-align: top;
+    border-color: #ffffff;
+    margin: 0rem;
+}
+.userListTable .table > thead {
+    vertical-align: bottom;
+    background-color: #F37021;
+    color: #ffff;
+    
+}
+.userListTable .react-bootstrap-table {
+    padding: 0.5rem 2rem;
+}
+.userListTable .table > :not(caption) > * > * {
+    border-width: 1px;
+    padding: 0.3rem 2.5rem;
+    border-color: #ffff;
+
+}
+.userListHeader{
+    margin: 1rem 0.5rem;
+}
+.userViewCreate {
+    display: flex;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    background: #EC6A2E;
+    /* box-shadow: 0px 0px 1px 0px #5a5a5a; */
+    margin: 2.5rem 0rem 0rem 2.2rem;
+  }
+  .Cureveuserlist{
+    font-size: 20px !important;
+    font-weight: bold !important;
+    border-radius: 12px;
+    background-color: #bf360c;
+    color: #ffff;
+  }
+  .userViewCreate:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 20px solid #ffff;
+    border-top: 23px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+  .userViewCreate:after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 20px solid #EC6A2E;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+  .SearchIconuserList{
+    position: absolute;
+    margin: 0.5rem 0rem 0rem 10rem;
   }

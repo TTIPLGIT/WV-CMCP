@@ -8,40 +8,41 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Typography from "@mui/material/Typography";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import { FaArrowDown, FaEye, FaTrashAlt } from "react-icons/fa";
-import { FormControl, MenuItem, Select, TextField } from "@mui/material";
+import { FormControl, MenuItem, Pagination, Select, TextField } from "@mui/material";
+import SearchIcon from '@mui/icons-material/Search';
 
 const Catalog = () => {
   const [orderData, setorderData] = useState([
     {
-      no: "01",
+      no: "1",
       victimname: "mathi",
       reportername: "chanduru",
       state: "Assam",
       distric: "Assam",
     },
     {
-      no: "02",
+      no: "2",
       victimname: "mathi",
       reportername: "chanduru",
       state: "West Bengal",
       distric: "Bengal",
     },
     {
-      no: "03",
+      no: "3",
       victimname: "mathi",
       reportername: "chanduru",
       state: "Assam",
       distric: "Assam",
     },
     {
-      no: "04",
+      no: "4",
       victimname: "mathi",
       reportername: "chanduru",
       state: "West Bengal",
       distric: "Bengal",
     },
     {
-      no: "05",
+      no: "5",
       victimname: "mathi",
       reportername: "chanduru",
       state: "Assam",
@@ -88,7 +89,7 @@ const Catalog = () => {
   let tableData = {
     columns: [
       {
-        text: "S.No",
+        text: "Sl.No",
         dataField: "no",
         width: 300,
         editable: false,
@@ -145,12 +146,16 @@ const Catalog = () => {
       <div className="CatalogHeader">
         <div className="CatalogList">
           <div className="CatalogListContent">
-            <label>Victim Name:</label>
+            <label>User Name:</label>
             <FormControl fullWidth>
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 className="CatalogInputContentSelect"
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               >
                 <MenuItem value=" Yes"> name</MenuItem>
                 <MenuItem value=" no"> victim</MenuItem>
@@ -158,12 +163,16 @@ const Catalog = () => {
             </FormControl>
           </div>
           <div className="CatalogListContent">
-            <label>Reporter Name</label>
+            <label>Action</label>
             <FormControl fullWidth>
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 className="CatalogInputContentSelect"
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               >
                 <MenuItem value=" Yes"> name</MenuItem>
                 <MenuItem value=" no"> victim</MenuItem>
@@ -177,6 +186,10 @@ const Catalog = () => {
                 type="date"
                 id="outlined-basic"
                 variant="outlined"
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
           </div>
           <div className="CatalogListContent">
@@ -186,6 +199,10 @@ const Catalog = () => {
                 type="date"
                 id="outlined-basic"
                 variant="outlined"
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
           </div>
         </div>
@@ -196,13 +213,20 @@ const Catalog = () => {
       <div className="CatalogTableContent">
         <div className="aaditcatelogbuttonfeild" >
           <button className="catelogbutton">Download case</button>
-          <input className="Aaditcatelogsearchinput" type="text" placeholder="Search..."/>
+          <div>
+            <lable>Search: </lable>
+            <SearchIcon className="SearchIconAditlog"/>
+          <input className="Aaditcatelogsearchinput" type="text" placeholder="Search..."/></div>
         </div>
         <BootstrapTable
           keyField="id"
           data={tableData.rows}
           columns={tableData.columns}
         />
+        <div className="cateLogPagenation">
+            <div><p>Showing  5 to 5 of 5 entries</p></div>
+            <div> <Pagination count={10} color="primary" /></div>
+          </div>
       </div>
     </div>
     // </div>

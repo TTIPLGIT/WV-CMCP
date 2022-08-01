@@ -54,7 +54,7 @@
     margin: 0.5rem 0rem;
     padding: 1rem 0rem;
     background-color: white;
-    box-shadow: 4px 4px 6px 4px #757373;
+    box-shadow: 1px 1px 4px 1px #757373;
 }
 .ViewLogInputContent{
     display: flex;

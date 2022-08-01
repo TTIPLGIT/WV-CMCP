@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
+import { TextField } from "@mui/material";
 
 const ForgotPassword = () => {
-
   const breadcrumbs = [
     <Link
       underline="hover"
@@ -32,11 +32,10 @@ const ForgotPassword = () => {
     </Typography>,
   ];
 
-
   return (
     <div className="ForgortpasswordContainer">
-       <Breadcrumbs
-      className="adminUserBreadcrumbs"
+      <Breadcrumbs
+        className="adminUserBreadcrumbs"
         separator={<ArrowForwardIosRoundedIcon sx={{ fontSize: 12 }} />}
         aria-label="breadcrumb"
       >
@@ -46,23 +45,35 @@ const ForgotPassword = () => {
         <h5>ForgotPassword</h5>
       </div>
       <div className="ForgotPasswordMain">
-      <div className="ForgotPasswordContent">
-        <div className="forgotPasswordinputContent">
-          <lable>Email</lable>
-          <input type="Email" placeholder="Email" />
+        <div className="ForgotPasswordContent">
+          <div className="forgotPasswordinputContent">
+            <lable>Email</lable>
+            <TextField
+              name="email"
+              id="outlined-basic"
+              variant="outlined"
+              sx={{
+                "& legend": { display: "none" },
+                "& fieldset": { top: 0 },
+              }}
+            />
+          </div>
+          <div className="forgotPasswordinputContent">
+            <lable>New Password</lable>
+            <TextField
+              name="Password"
+              id="outlined-basic"
+              variant="outlined"
+              sx={{
+                "& legend": { display: "none" },
+                "& fieldset": { top: 0 },
+              }}
+            />
+          </div>
         </div>
-        <div className="forgotPasswordinputContent">
-          <lable>Password</lable>
-          <input type="password" placeholder="Password" />
+        <div className="ForgotPasswordButton">
+          <button>Send password</button>
         </div>
-        <div className="forgotPasswordinputContent">
-          <lable>Cofirm Password</lable>
-          <input type="password" placeholder="Confirm Password" />
-        </div>
-      </div>
-      <div className="ForgotPasswordButton">
-        <button >Change password</button>
-      </div>
       </div>
     </div>
   );

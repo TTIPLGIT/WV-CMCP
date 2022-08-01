@@ -13,43 +13,47 @@ import { renderToString, renderToStaticMarkup } from "react-dom/server";
 import Apps from "../Report/demo";
 import Report from "../Report";
 import { Pagination, Switch, TextField } from "@mui/material";
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import AddIcon from '@mui/icons-material/Add';
+import UnfoldLessIcon from '@mui/icons-material/UnfoldLess';
+import SearchIcon from '@mui/icons-material/Search';
 
 
 
 const UserList = (props) => {
   const [orderData, setorderData] = useState([
     {
-      no: "01",
+      no: "1",
       victimname: "mathi",
-      reportername: "chanduru",
+      reportername: "chanduru@gmail.com",
       state: "Assam",
       distric: "Assam",
     },
     {
-      no: "02",
+      no: "2",
       victimname: "mathi",
-      reportername: "chanduru",
+      reportername: "chanduru@gmail.com",
       state: "West Bengal",
       distric: "Bengal",
     },
     {
-      no: "03",
+      no: "3",
       victimname: "mathi",
-      reportername: "chanduru",
+      reportername: "chanduru@gmail.com",
       state: "Assam",
       distric: "Assam",
     },
     {
-      no: "04",
+      no: "4",
       victimname: "mathi",
-      reportername: "chanduru",
+      reportername: "chanduru@gmail.com",
       state: "West Bengal",
       distric: "Bengal",
     },
     {
-      no: "05",
+      no: "5",
       victimname: "mathi",
-      reportername: "chanduru",
+      reportername: "chanduru@gmail.com",
       state: "Assam",
       distric: "Assam",
     },
@@ -65,17 +69,7 @@ const UserList = (props) => {
     console.log("orderData", a);
   };
 
-  let data = [
-    { id: 1, lastName: "Snow", firstName: "Jon", age: 89 },
-    { id: 2, lastName: "Lannister", firstName: "Cersei", age: 456 },
-    { id: 3, lastName: "Lannister", firstName: "Jaime", age: 45 },
-    { id: 4, lastName: "Stark", firstName: "Arya", age: 16 },
-    { id: 5, lastName: "Targaryen", firstName: "Daenerys", age: 30 },
-    { id: 6, lastName: "Melisandre", firstName: "Daenerys", age: 150 },
-    { id: 7, lastName: "Clifford", firstName: "Ferrara", age: 44 },
-    { id: 8, lastName: "Frances", firstName: "Rossini", age: 36 },
-    { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
-  ];
+  
   const generatorPdf = () => {
     let html = renderToStaticMarkup(<Report />);
     let doc = new jsPDF("p", "pt", "a2");
@@ -122,13 +116,13 @@ const UserList = (props) => {
       },
 
       {
-        text: "Victim Name",
+        text: "User Name",
         dataField: "victimname",
         width: 300,
         editable: false,
       },
       {
-        text: "Reporter Name",
+        text: "Email",
         dataField: "reportername",
         width: 300,
         editable: false,
@@ -169,13 +163,10 @@ const UserList = (props) => {
               </Link>
 
            
-              <h6><FaArrowDown  onClick={() => generatorPdf()} className="userListLogIcons" /></h6>
+              <h6><FileDownloadIcon  onClick={() => generatorPdf()} className="userListLogIcons" /></h6>
           
 
              <h6> <FaTrashAlt  onClick={() => handleDelete(i)} className="userListLogIcons" /></h6>
-
-             <h6> <Switch  defaultChecked color="warning" className="userListLogIcons" />
-</h6>
           </div>
         ),
       })),
@@ -184,18 +175,22 @@ const UserList = (props) => {
   return (
     <div className="incidentViewContainer">
       <Breadcrumbs
-        className="UserListBreadcrumbs"
+        className="UserListBreadcrusmbs"
         separator={<ArrowForwardIosRoundedIcon sx={{ fontSize: 12 }} />}
         aria-label="breadcrumb"
       >
         {breadcrumbs}
       </Breadcrumbs>
-      {/* <div className="incidentViewCreate"><AddIcon className="CureveIncidentLog"/><p className="CartviewListTable">Create</p></div> */}
+      <div className="userViewCreate"><AddIcon className="Cureveuserlist"/><p className="CartviewListTable"><Link className="CarveLink" to="/admin/useradminregistration">Create</Link></p></div>
+
+      <div className="userListHeader"><h5>User List</h5></div>
+
       <div className="userListTable">
-        <div className="incidentsearchView">
+
+        <div className="userListearchView">
           <div>
             Show
-            <select className="viewIncidentListDropdown" name="number" id="number">
+            <select className="userListListDropdown" name="number" id="number">
               <option value="five">05</option>
               <option value="four">10</option>
               <option value="three">50</option>
@@ -205,12 +200,15 @@ const UserList = (props) => {
           </div>
           <div>
             <label>Search: </label>
+            <SearchIcon className="SearchIconuserList"/>
             <input
+            className="userListearchViewInput"
               name="designation"
               type="textarea"
               id="outlined-basic"
               variant="outlined"
             />
+           
           </div>
         </div>
         <div>
@@ -219,7 +217,7 @@ const UserList = (props) => {
             data={tableData.rows}
             columns={tableData.columns}
           />
-          <div className="IncidentviewPagenation">
+          <div className="userListPagenation">
             <div><p>Showing  5 to 5 of 5 List</p></div>
             <div> <Pagination count={10} color="primary" /></div>
           </div>

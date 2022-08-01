@@ -100,11 +100,12 @@ export default {
       icon: PersonIcon,
       children: [
         {
-          path: '/useradminregistration',
-          name: 'User Registration',
+          path: '/userlist',
+          name: 'User List',
           icon: ExploreIcon,
-          component: UserAdminRegistration
+          component: UserList
         },
+        
         {
           path: '/forgotpassword',
           name: 'User Set Password',
@@ -112,11 +113,12 @@ export default {
           component: ForgotPassword
         },
         {
-          path: '/userlist',
-          name: 'User List',
+          path: '/useradminregistration',
+          name: 'User Registration',
           icon: ExploreIcon,
-          component: UserList
+          component: UserAdminRegistration
         },
+        
        
       ]
     },
@@ -128,17 +130,18 @@ export default {
       icon: LocalLibraryIcon,
       children: [
         {
-          path: '/incidentlog',
-          name: 'Incident Log Create',
-          icon: ExploreIcon,
-          component: IncidentLog
-        },
-        {
           path: '/incidentview',
           name: 'Incident List',
           icon: ExploreIcon,
           component: IncidentView
         },
+        {
+          path: '/incidentlog',
+          name: 'Incident Log Create',
+          icon: ExploreIcon,
+          component: IncidentLog
+        },
+      
         {
           path: '/viewlog',
           name: 'View Incident',

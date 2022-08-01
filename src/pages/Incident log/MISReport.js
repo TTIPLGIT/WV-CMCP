@@ -8,43 +8,47 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Typography from "@mui/material/Typography";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import { FaArrowDown, FaEye, FaTrashAlt } from "react-icons/fa";
-import { FormControl, MenuItem, Select, TextField, } from "@mui/material";
+import { FormControl, MenuItem,  Select, TextField, } from "@mui/material";
 import { renderToStaticMarkup } from "react-dom/server";
 import AllReport from "../Report/AllReport";
 import jsPDF from "jspdf";
+import { Pagination,  } from "@mui/material";
+import SearchIcon from '@mui/icons-material/Search';
+
+
 
 const AllReportView = () => {
   const [orderData, setorderData] = useState([
     {
-      no: "01",
+      no: "1",
       victimname: "mathi",
       reportername: "chanduru",
       state: "Assam",
       distric: "Assam",
     },
     {
-      no: "02",
+      no: "2",
       victimname: "mathi",
       reportername: "chanduru",
       state: "West Bengal",
       distric: "Bengal",
     },
     {
-      no: "03",
+      no: "3",
       victimname: "mathi",
       reportername: "chanduru",
       state: "Assam",
       distric: "Assam",
     },
     {
-      no: "04",
+      no: "4",
       victimname: "mathi",
       reportername: "chanduru",
       state: "West Bengal",
       distric: "Bengal",
     },
     {
-      no: "05",
+      no: "5",
       victimname: "mathi",
       reportername: "chanduru",
       state: "Assam",
@@ -102,7 +106,7 @@ const AllReportView = () => {
   let tableData = {
     columns: [
       {
-        text: "S.No",
+        text: "Sl.No",
         dataField: "no",
         width: 300,
         editable: false,
@@ -151,11 +155,11 @@ const AllReportView = () => {
         distric: value.distric,
         actions: (
           <div className="incidentLogIconsContent">
-            {/* <Button className="incidentLogViewIconview">
+            
               <Link to={{ pathname: "/allreport", state: value }}>
                 <FaEye className="incidentLogIcons" />
               </Link>
-            </Button> */}
+           
 
             {/* <Button className="incidentLogDownloadeIcon">
               <Link to={{ pathname: "/report", state: value }}>
@@ -164,7 +168,7 @@ const AllReportView = () => {
             </Button> */}
 
             
-              <FaTrashAlt  onClick={() => handleDelete(i)} className="incidentLogIcons" />
+              {/* <FaTrashAlt  onClick={() => handleDelete(i)} className="incidentLogIcons" /> */}
            
           </div>
         ),
@@ -177,6 +181,10 @@ const AllReportView = () => {
       className="IncidentLogBreadcrumbs"
         separator={<ArrowForwardIosRoundedIcon sx={{ fontSize: 12 }} />}
         aria-label="breadcrumb"
+        sx={{
+          "& legend": { display: "none" },
+          "& fieldset": { top: 0 },
+      }}
       >
         {breadcrumbs}
       </Breadcrumbs>
@@ -184,15 +192,19 @@ const AllReportView = () => {
       <div className="AllreportedListHeader">
         <div className="AllreportedList">
           <div className="AllreportedListContent">
-            <label>Victim Name:</label>
+            <label>Quarter:</label>
             <FormControl fullWidth>
               <Select
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 className="IncidentLogInputContentSelect"
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               >
-                <MenuItem value=" Yes"> name</MenuItem>
-                <MenuItem value=" no"> victim</MenuItem>
+                <MenuItem value=" Yes"> 2022 -2021 </MenuItem>
+                <MenuItem value=" no"> 2021 -2020</MenuItem>
               </Select>
             </FormControl>
           </div>
@@ -203,6 +215,10 @@ const AllReportView = () => {
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 className="IncidentLogInputContentSelect"
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               >
                 <MenuItem value=" Yes"> name</MenuItem>
                 <MenuItem value=" no"> victim</MenuItem>
@@ -216,6 +232,10 @@ const AllReportView = () => {
                 type="date"
                 id="outlined-basic"
                 variant="outlined"
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
           </div>
           <div className="AllreportedListContent">
@@ -225,6 +245,10 @@ const AllReportView = () => {
                 type="date"
                 id="outlined-basic"
                 variant="outlined"
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
           </div>
         </div>
@@ -232,16 +256,35 @@ const AllReportView = () => {
       </div>
 
       {/* <div className="incidentViewTable"> */}
+      
         <div className="AllreportTableContent">
-        <button className="AllreportTableContentbutton"  onClick={()=>generatorPdf()}>Download Case</button>
+         <div className="AllreportTableContentMISReport">
+          <div>
+        <button className="AllreportTableContentbutton"  onClick={()=>generatorPdf()}>Download MIS</button></div>
+        <div>
+            <label>Search: </label>
+            <SearchIcon className="SearchIconMisList"/>
+            <input 
+            className="AllreportTableContentMISReportInput"
+              name="designation"
+              type="textarea"
+              id="outlined-basic"
+              variant="outlined"
+            />
+          </div>
+        </div>
           <BootstrapTable
             keyField="id"
             data={tableData.rows}
             columns={tableData.columns}
           />
+          <div className="MISReportPagenation">
+            <div><p>Showing  5 to 5 of 5 entries</p></div>
+            <div> <Pagination count={10} color="primary" /></div>
+          </div>
         </div>
       </div>
-    // </div>
+     
   );
 };
 export default AllReportView;

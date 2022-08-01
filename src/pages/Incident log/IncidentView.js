@@ -14,41 +14,45 @@ import Apps from "../Report/demo";
 import Report from "../Report";
 import { Pagination, TextField } from "@mui/material";
 import AddIcon from '@mui/icons-material/Add';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
+import SearchIcon from '@mui/icons-material/Search';
+
+
 
 
 
 const IncidentView = (props) => {
   const [orderData, setorderData] = useState([
     {
-      no: "01",
+      no: "1",
       victimname: "mathi",
       reportername: "chanduru",
       state: "Assam",
       distric: "Assam",
     },
     {
-      no: "02",
+      no: "2",
       victimname: "mathi",
       reportername: "chanduru",
       state: "West Bengal",
       distric: "Bengal",
     },
     {
-      no: "03",
+      no: "3",
       victimname: "mathi",
       reportername: "chanduru",
       state: "Assam",
       distric: "Assam",
     },
     {
-      no: "04",
+      no: "4",
       victimname: "mathi",
       reportername: "chanduru",
       state: "West Bengal",
       distric: "Bengal",
     },
     {
-      no: "05",
+      no: "5",
       victimname: "mathi",
       reportername: "chanduru",
       state: "Assam",
@@ -176,7 +180,7 @@ const IncidentView = (props) => {
              
             >
               {" "} */}
-              <h6><FaArrowDown  onClick={() => generatorPdf()} className="incidentLogIcons" /></h6>
+              <h6><FileDownloadIcon  onClick={() => generatorPdf()} className="incidentLogIcons" /></h6>
             {/* </Button> */}
 
             {/* <Button
@@ -202,7 +206,7 @@ const IncidentView = (props) => {
       <div className="incidentviewListHead">
         <h4>Incident List</h4>
       </div>
-      <div className="incidentViewCreate"><AddIcon className="CureveIncidentLog"/><p className="CartviewListTable">Create</p></div>
+      <div className="incidentViewCreate"><AddIcon className="CureveIncidentLog"/><p className="CartviewListTable"><Link className="CarveLink" to="/incident/incidentlog">Create</Link></p></div>
       <div className="incidentViewTable">
         <div className="incidentsearchView">
           <div>
@@ -217,6 +221,7 @@ const IncidentView = (props) => {
           </div>
           <div>
             <label>Search: </label>
+            <SearchIcon className="SearchIconuserList"/>
             <input
               name="designation"
               type="textarea"

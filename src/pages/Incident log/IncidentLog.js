@@ -297,6 +297,10 @@ export default function IncidentLog() {
                 onChange={(e) =>
                   setData({ ...data, reporterName: e.target.value })
                 }
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
             <div className="IncidentLogInputContent">
@@ -313,6 +317,10 @@ export default function IncidentLog() {
                 onChange={(e) =>
                   setData({ ...data, designation: e.target.value })
                 }
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
             <div className="IncidentLogInputContent">
@@ -329,6 +337,10 @@ export default function IncidentLog() {
                 onChange={(e) =>
                   setData({ ...data, dateofreporting: e.target.value })
                 }
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
 
@@ -345,6 +357,10 @@ export default function IncidentLog() {
                 onChange={(e) =>
                   setData({ ...data, nameofVictim: e.target.value })
                 }
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
             <div className="IncidentLogInputContent">
@@ -360,6 +376,10 @@ export default function IncidentLog() {
                 onChange={(e) =>
                   setData({ ...data, gardianName: e.target.value })
                 }
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
             <div className="IncidentLogInputContent">
@@ -374,6 +394,10 @@ export default function IncidentLog() {
                 onChange={(e) =>
                   setData({ ...data, victimAge: e.target.value })
                 }
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
 
@@ -392,6 +416,10 @@ export default function IncidentLog() {
                   onChange={(e) =>
                     setData({ ...data, Firfillornot: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 >
                   <MenuItem onClick={togglePopup}> Yes</MenuItem>
                   {isOpen && (
@@ -406,6 +434,10 @@ export default function IncidentLog() {
                             type="date"
                             id="outlined-basic"
                             variant="outlined"
+                            sx={{
+                              "& legend": { display: "none" },
+                              "& fieldset": { top: 0 },
+                          }}
                           />
                            <lable className="IncidentLogInputContentlabel">
                 Proof of DoB :<span className="IncidentLogInputPointer">*</span>
@@ -417,6 +449,10 @@ export default function IncidentLog() {
                 onChange={(e) =>
                   setData({ ...data, proofofDOB: e.target.value })
                 }
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
               <div  className="IncidentLogInputButtonOne">
               <button>Submit</button></div>
@@ -540,6 +576,10 @@ export default function IncidentLog() {
                         onChange={(e) =>
                           setData({ ...data, natureofIncident: e.target.value })
                         }
+                        sx={{
+                          "& legend": { display: "none" },
+                          "& fieldset": { top: 0 },
+                      }}
                       />
                     )}
                   />
@@ -560,6 +600,10 @@ export default function IncidentLog() {
                   id="demo-simple-select"
                   className="IncidentLogInputContentSelect"
                   onChange={(e) => setData({ ...data, state: e.target.value })}
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 >
                   <MenuItem value="assam">Assam</MenuItem>
                   <MenuItem value="WestBengal"> West Bengal</MenuItem>
@@ -581,6 +625,10 @@ export default function IncidentLog() {
                   onChange={(e) =>
                     setData({ ...data, distric: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 >
                   <MenuItem value="assam">Assam</MenuItem>
                   <MenuItem value="WestBengal"> West Bengal</MenuItem>
@@ -600,6 +648,10 @@ export default function IncidentLog() {
                   id="demo-simple-select"
                   className="IncidentLogInputContentSelect"
                   onChange={(e) => setData({ ...data, block: e.target.value })}
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 >
                   <MenuItem value="assam">Assam</MenuItem>
                   <MenuItem value="WestBengal"> West Bengal</MenuItem>
@@ -621,6 +673,10 @@ export default function IncidentLog() {
                   onChange={(e) =>
                     setData({ ...data, gramPanchayat: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 >
                   <MenuItem value="assam">Assam</MenuItem>
                   <MenuItem value="WestBengal"> West Bengal</MenuItem>
@@ -642,6 +698,10 @@ export default function IncidentLog() {
                   onChange={(e) =>
                     setData({ ...data, villageName: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 >
                   <MenuItem value="assam">Assam</MenuItem>
                   <MenuItem value="WestBengal"> West Bengal</MenuItem>
@@ -663,6 +723,10 @@ export default function IncidentLog() {
                   onChange={(e) =>
                     setData({ ...data, policeStation: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 >
                   <MenuItem value="assam">Assam</MenuItem>
                   <MenuItem value="WestBengal"> West Bengal</MenuItem>
@@ -694,6 +758,10 @@ export default function IncidentLog() {
                 onChange={(e) =>
                   setData({ ...data, dateogIncident: e.target.value })
                 }
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
             <div className="IncidentLogInputContent">
@@ -709,6 +777,10 @@ export default function IncidentLog() {
                 onChange={(e) =>
                   setData({ ...data, discriptionofIncident: e.target.value })
                 }
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
 
@@ -725,6 +797,10 @@ export default function IncidentLog() {
                 onChange={(e) =>
                   setData({ ...data, nameofOffender: e.target.value })
                 }
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
             <div className="IncidentLogInputContent">
@@ -743,6 +819,10 @@ export default function IncidentLog() {
                     offenderdreletoiontoVoctim: e.target.value,
                   })
                 }
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
             <div className="IncidentLogInputContent">
@@ -758,6 +838,10 @@ export default function IncidentLog() {
                 onChange={(e) =>
                   setData({ ...data, offenderage: e.target.value })
                 }
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
 
@@ -853,6 +937,10 @@ export default function IncidentLog() {
                             whoinformedtheincident: e.target.value,
                           })
                         }
+                        sx={{
+                          "& legend": { display: "none" },
+                          "& fieldset": { top: 0 },
+                      }}
                       />
                     )}
                   />
@@ -875,6 +963,10 @@ export default function IncidentLog() {
                   onChange={(e) =>
                     setData({ ...data, complaintLogPS: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 >
                   <MenuItem value=" yes"> Yes</MenuItem>
                   <MenuItem value=" no">NO</MenuItem>
@@ -893,6 +985,10 @@ export default function IncidentLog() {
                 id="outlined-basic"
                 variant="outlined"
                 onChange={(e) => setData({ ...data, GDEntry: e.target.value })}
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
 
@@ -911,6 +1007,10 @@ export default function IncidentLog() {
                   onChange={(e) =>
                     setData({ ...data, Firfillornot: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 >
                   <MenuItem onClick={togglePopup}> Yes</MenuItem>
                   {isOpen && (
@@ -963,6 +1063,10 @@ export default function IncidentLog() {
                   onChange={(e) =>
                     setData({ ...data, LocalPOliceStation: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 />
               </FormControl>
             </div>
@@ -982,6 +1086,10 @@ export default function IncidentLog() {
                   onChange={(e) =>
                     setData({ ...data, PoliceHelpLine: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 />
               </FormControl>
             </div>
@@ -1001,6 +1109,10 @@ export default function IncidentLog() {
                   onChange={(e) =>
                     setData({ ...data, childLine: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 />
               </FormControl>
             </div>
@@ -1020,6 +1132,10 @@ export default function IncidentLog() {
                   onChange={(e) =>
                     setData({ ...data, childwelfarecomitee: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 />
               </FormControl>
             </div>
@@ -1038,6 +1154,10 @@ export default function IncidentLog() {
                   onChange={(e) =>
                     setData({ ...data, childProductionUnit: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 />
               </FormControl>
             </div>
@@ -1052,7 +1172,10 @@ export default function IncidentLog() {
                 value={data.incidentreporothers}
                 id="outlined-basic"
                 variant="outlined"
-               
+                sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
 
@@ -1077,6 +1200,10 @@ export default function IncidentLog() {
                   onChange={(e) =>
                     setData({ ...data, firGDActionTacken: e.target.value })
                   }
+                  sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 >
                   {/* <MenuItem value="WhatSectionsAppliedFIR">
                     What Sections Applied in FIR?{" "}
@@ -1137,7 +1264,10 @@ export default function IncidentLog() {
                   className="IncidentLogInputContentSelect"
                   onChange={(e) =>
                     setData({ ...data, victimRecoverdorNot: e.target.value })
-                  }
+                  }sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 >
                   <MenuItem value="yes">Yes</MenuItem>
                   <MenuItem value=" no"> No</MenuItem>
@@ -1158,7 +1288,10 @@ export default function IncidentLog() {
                   className="IncidentLogInputContentSelect"
                   onChange={(e) =>
                     setData({ ...data, accusedArrested: e.target.value })
-                  }
+                  }sx={{
+                    "& legend": { display: "none" },
+                    "& fieldset": { top: 0 },
+                }}
                 >
                   <MenuItem value=" yes"> Yes</MenuItem>
                   <MenuItem value=" no"> No</MenuItem>
@@ -1178,7 +1311,10 @@ export default function IncidentLog() {
                 variant="outlined"
                 onChange={(e) =>
                   setData({ ...data, numberofArrested: e.target.value })
-                }
+                }sx={{
+                  "& legend": { display: "none" },
+                  "& fieldset": { top: 0 },
+              }}
               />
             </div>
           </div>

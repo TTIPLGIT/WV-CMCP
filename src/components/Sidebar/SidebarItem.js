@@ -34,8 +34,7 @@ const useStyles = makeStyles((theme) => ({
     display: "block",
   },
   menuItem: {
-    paddingLeft: 0,
-    paddingRight: 0,
+   
     paddingTop: theme.spacing(1) * 1.5,
     paddingBottom: theme.spacing(1) * 1.5,
   },

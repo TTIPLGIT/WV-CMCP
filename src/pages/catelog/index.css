@@ -94,7 +94,7 @@
 }
 .CatalogTableContent .table > :not(caption) > * > * {
     background-color: var(--bs-table-bg);
-    border-width: 3px;
+    border-width: 2px;
     padding: 0.5rem 2rem;
     border-color: #ffff;
 
